@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" media="all" href="./styles.css" />
+    <title>Toby's Coding Playground</title>
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <!-- BRIGHTNESS -->
+    <div class="buttondiv modebuttongrid">
+      <button onclick="makeItDark()" class="modebutton" id="darkbutton">
+        🌙
+      </button>
+      <button onclick="makeItLight()" class="modebutton" id="lightbutton">
+        ☀️
+      </button>
+      <button id="startquizbutton" class="modebutton">Quiz!</button>
+    </div>
+    <header class="top" id="headerid">
+      <!-- NAVIGATION -->
+
+    
+    <!-- MAIN -->
+    <main>
+    
+      <!-- PIZZA -->
+      <h2>Create your perfect pizza!</h2>
+      <h3>testing functions, prompts and css</h3>
+
+      <div class="buttondiv sevenbuttongrid">
+        <button onclick="addCheese()" id="cheesebutton" class="yellowbutton">
+          🧀
+        </button>
+        <button onclick="addPineapple()" id="pinebutton" class="yellowbutton">
+          🍍
+        </button>
+        <button onclick="addGarlic()" id="garlicbutton" class="yellowbutton">
+          🧄
+        </button>
+        <button
+          id="bananabutton"
+          onclick="confirmBanana()"
+          class="yellowbutton"
+        >
+          🍌
+        </button>
+        <button onclick="addPeppers()" id="pepperbutton" class="yellowbutton">
+          🌶️
+        </button>
+        <button onclick="addBroc()" id="brocbutton" class="yellowbutton">
+          🥦
+        </button>
+        <button onclick="resetToppings()" id="resetbutton" class="yellowbutton">
+          Reset
+        </button>
+      </div>
+      <div id="pizzaarea" class="rotatepizza">
+        <svg viewBox="-3 0 107 83" width="500" height="500">
+          <defs>
+            <path
+              id="circle"
+              d="
+                  M 50, 50
+                  m -37, 0
+                  a 37,37 0 1,1 74,0
+                  a 37,37 0 1,1 -74,0"
+            />
+          </defs>
+          <text font-size="10">
+            <textPath xlink:href="#circle" id="texttopping"></textPath>
+          </text>
+        </svg>
+      </div>
+     
+    </main>
+    <!-- FOOTER -->
+    <footer id=" footerid"><span>no copyright 😎</span></footer>
+    <div id="cookiemonster">
+      Toby eats Cookies all the time, because they are delicious. For some
+      reason, this felt like the best place to mention this fact.
+      <button id="cookiebutton">Good to know.</button>
+    </div>
+  </body>
+  <script src="./JS/strippokerv3.js"></script>
+  <script src="./JS/allthejs.js"></script>
+</html>
