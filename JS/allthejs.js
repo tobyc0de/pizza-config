@@ -22,23 +22,23 @@ function makeItLight() {
 
 // PIZZA CONFIGURATOR
 function addCheese() {
-  document.getElementById("texttopping").innerHTML += "🧀";
+  document.getElementById("texttopping").textContent += "🧀";
 }
 
 function addPeppers() {
-  document.getElementById("texttopping").innerHTML += "🌶️";
+  document.getElementById("texttopping").textContent += "🌶️";
 }
 
 function addBroc() {
-  document.getElementById("texttopping").innerHTML += "🥦";
+  document.getElementById("texttopping").textContent += "🥦";
 }
 
 function addGarlic() {
-  document.getElementById("texttopping").innerHTML += "🧄";
+  document.getElementById("texttopping").textContent += "🧄";
 }
 
 function addPineapple() {
-  document.getElementById("texttopping").innerHTML += "💩";
+  document.getElementById("texttopping").textContent += "💩";
 }
 
 function confirmBanana() {
@@ -46,7 +46,7 @@ function confirmBanana() {
 }
 
 function resetToppings() {
-  document.getElementById("texttopping").innerHTML = "";
+  document.getElementById("texttopping").textContent = "";
 }
 
 // COOKIE BAR
